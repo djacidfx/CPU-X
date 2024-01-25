@@ -2,16 +2,16 @@ apply plugin: 'com.android.application'
 apply plugin: "com.google.gms.google-services"
 
 android {
-    namespace 'com.app.mywild'
+    namespace 'com.app.cpux'
     compileSdk 34
 
     defaultConfig {
         applicationId 'work.mywild.cpux'
-        minSdk 19
+        minSdk 21
         targetSdk 34
-        versionCode 11
-        versionName '1.0.8'
+        versionName '1.1.0'
         multiDexEnabled true
+        versionCode 12
     }
     buildTypes {
         release {
@@ -28,9 +28,9 @@ android {
 
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.browser:browser:1.7.0'
+    implementation 'androidx.browser:browser:1.5.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.balysv:material-ripple:1.0.2'
     implementation 'androidx.multidex:multidex:2.0.1'
@@ -39,8 +39,16 @@ dependencies {
     implementation 'com.google.android.play:app-update:2.1.0'
 
     // firebase library
-    implementation platform('com.google.firebase:firebase-bom:32.5.0')
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
     implementation 'com.google.firebase:firebase-config'
 
-    implementation 'com.github.dream-space:dreamspace-ads:2.2'
+    // AD NETWORKS OPTIONS :
+    // 3.0.1-all = Uses Admob, Meta Audience Network, IronSource, Google Ad Manager, Unity Ads, Startapp, Applovin, Applovin Max, Wortise
+    // 3.0.1-triple = Uses AdMob, Google Ad Manager, Meta Audience Network and Applovin
+    // 3.0.1-simple = Uses AdMob, Google Ad Manager, Meta Audience Network
+    // 3.0.1-ex-wortise = Uses all of ads exclude Wortise
+    // 3.0.1-custom = Uses AdMob, Meta Audience Network, IronSource
+    // 3.0.1-admob-only = Uses Admob Only
+    // 3.0.1-none = Doesn't use any ads
+    implementation 'com.github.dream-space:dreamspace-ads-sdk:3.0.1.2-custom'
 }

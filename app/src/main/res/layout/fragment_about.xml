@@ -30,18 +30,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Version 1.0.7"
+        android:text="Version 2.3"
         android:textColor="@color/main_color"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/bt_read2"
-        android:layout_width="188dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/button_rate"
-        android:text="@string/vist_our_website"
-        android:textColor="@color/main_color" />
 
     <Button
         android:id="@+id/bt_read"
@@ -49,8 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/button_rate"
-        android:text="Rate This App"
+        android:text="Rate Device Insight"
         android:textColor="@color/main_color" />
-
 
 </LinearLayout>
